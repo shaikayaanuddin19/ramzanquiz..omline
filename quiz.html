@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ramazan Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+<div id="app">
+  <section class="quiz-container">
+
+    <h1>Ramazan Quiz</h1>
+
+    <div class="quiz-box">
+      <p id="q-count"></p>
+      <h2 id="question"></h2>
+
+      <div class="options">
+        <label>
+          <input type="radio" name="option" value="0">
+          <span class="option-text"></span>
+        </label>
+
+        <label>
+          <input type="radio" name="option" value="1">
+          <span class="option-text"></span>
+        </label>
+
+        <label>
+          <input type="radio" name="option" value="2">
+          <span class="option-text"></span>
+        </label>
+
+        <label>
+          <input type="radio" name="option" value="3">
+          <span class="option-text"></span>
+        </label>
+      </div>
+
+      <button id="nextBtn" onclick="nextQuestion()">Next</button>
+    </div>
+
+  </section>
+</div>
+
+<script type="module" src="./quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admin-dashboard.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+  <aside class="sidebar">
+    <h2>🛡️ Admin</h2>
+    <ul>
+      <li onclick="showSection('add')">➕ Add Questions</li>
+      <li onclick="showSection('manage')">✏️ Manage Questions</li>
+      <li onclick="showSection('stats')">📊 Stats</li>
+      <li onclick="logout()">🚪 Logout</li>
+    </ul>
+  </aside>
+
+  <main class="main">
+
+    <!-- ADD -->
+    <section id="add" class="section active">
+      <input type="date" id="quizDate">
+
+      <input id="q_en" placeholder="Question English">
+      <input id="q_ur" placeholder="سوال اردو">
+
+      <input id="optA" placeholder="Option A">
+      <input id="optB" placeholder="Option B">
+      <input id="optC" placeholder="Option C">
+      <input id="optD" placeholder="Option D">
+
+      <select id="correct">
+        <option>A</option><option>B</option>
+        <option>C</option><option>D</option>
+      </select>
+
+      <textarea id="explain" placeholder="Explanation"></textarea>
+      <input id="quran" placeholder="Quran Reference">
+      <input id="hadith" placeholder="Hadith Reference">
+
+      <button onclick="saveQuestion()">💾 Save Question</button>
+    </section>
+
+    <!-- MANAGE -->
+    <section id="manage" class="section">
+      <div id="manageList"></div>
+    </section>
+
+    <!-- STATS -->
+    <section id="stats" class="section">
+      <p>Stats coming soon…</p>
+    </section>
+
+  </main>
+</div>
+
+<!-- ⚠️ ONLY THIS SCRIPT -->
+<script type="module" src="admin-dashboard.js"></script>
+</body>
+</html>

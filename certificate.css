@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+.container{
+  max-width: 900px;
+  margin: auto;
+  padding: 90px 20px;
+  text-align: center;
+}
+
+h1{
+  color: #ffd369;
+  margin-bottom: 10px;
+}
+
+.subtitle{
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.certificate-img{
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.apply-btn{
+  background: #ffd369;
+  color: #000;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.apply-btn:hover{
+  background: #ffcc70;
+}
+
+/* Google Form Box */
+.form-box{
+  display: none;
+  margin-top: 30px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Hamburger + Sidebar (same as before) */
+.hamburger{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  cursor: pointer;
+  z-index: 10001;
+}
+
+.hamburger span{
+  display: block;
+  height: 3px;
+  background: #ffd369;
+  margin: 6px 0;
+}
+
+.side-menu{
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 260px;
+  height: 100%;
+  background: #0f2027;
+  padding-top: 60px;
+  transition: 0.3s;
+  z-index: 10000;
+}
+
+.side-menu a{
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.side-menu a:hover{
+  background: #203a43;
+}
+
+.side-menu.open{
+  right: 0;
+}
+
+#overlay{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  z-index: 9999;
+}

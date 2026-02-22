@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Result</title>
+  <link rel="stylesheet" href="result.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>📊 Quiz Result</h1>
+
+  <div class="options">
+    <button onclick="showScore()">⭐ My Score</button>
+    <button onclick="showAnswers()">📝 My Answers</button>
+  </div>
+
+  <!-- My Score Section -->
+  <div id="scoreBox" class="box hidden">
+    <h2>Your Score</h2>
+    <p id="scoreText"></p>
+  </div>
+
+  <!-- My Answer Section -->
+  <div id="answerBox" class="box hidden"></div>
+
+</div>
+
+<script type="module" src="result.js"></script>
+</body>
+</html>

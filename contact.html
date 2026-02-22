@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us | Ramazan Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+<!-- ☰ MENU -->
+<div class="menu-btn" onclick="toggleSidebar()">☰</div>
+
+<!-- 📌 SIDEBAR -->
+<div class="sidebar" id="sidebar">
+  <h2>Ramazan Quiz</h2>
+  <a href="index.html">🏠 Home</a>
+  <a href="aboutus.html">ℹ️ About Us</a>
+  <a href="contact.html" class="active">📞 Contact Us</a>
+  <a href="privacy.html">🔒 Privacy Policy</a>
+  <a href="terms.html">📜 Terms & Conditions</a>
+</div>
+
+<!-- 🌙 CONTENT -->
+<div class="content">
+  <h1>📞 Contact Us</h1>
+
+  <div class="card">
+    <p>
+      Agar aapko koi problem, suggestion ya feedback dena ho,
+      to neeche form fill karein ya WhatsApp par contact karein.
+    </p>
+
+    <!-- 📩 EMAIL FORM -->
+    <form id="contactForm">
+      <input type="text" name="from_name" placeholder="Your Name" required>
+      <input type="email" name="from_email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">📩 Send Message</button>
+    </form>
+
+    <!-- 📱 WHATSAPP BUTTON -->
+    <a
+      href="https://wa.me/919603380022?text=Assalamualaikum,%20I%20have%20a%20query%20regarding%20Ramazan%20Quiz"
+      target="_blank"
+      class="whatsapp-btn">
+      📱 Contact on WhatsApp
+    </a>
+  </div>
+</div>
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="contact.js"></script>
+
+<script>
+function toggleSidebar(){
+  document.getElementById("sidebar").classList.toggle("open");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Apply for Certificate | Ramazan Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="certificate.css">
+</head>
+<body>
+
+<!-- ☰ Hamburger -->
+<div class="hamburger" onclick="toggleMenu()">
+  <span></span><span></span><span></span>
+</div>
+
+<!-- Sidebar -->
+<div id="sideMenu" class="side-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="terms.html">Terms & Conditions</a>
+  <a href="quiz.html">Quiz</a>
+  <a href="certificate.html">Certificate</a>
+</div>
+
+<div id="overlay" onclick="toggleMenu()"></div>
+
+<section class="container">
+
+  <h1>Certificate</h1>
+
+  <p class="subtitle">
+    Below is an example of the certificate you will receive after successful participation.
+  </p>
+
+  <!-- Example Certificate Image -->
+  <img src="certificate.png" alt="Sample Certificate" class="certificate-img">
+
+  <!-- Apply Button -->
+  <button class="apply-btn" onclick="openForm()">
+    Apply for Certificate
+  </button>
+
+  <!-- Google Form (Hidden initially) -->
+  <div id="formBox" class="form-box">
+    <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLSfcZc6CNqawuxNg3HdO6yIlPC5AGTaYPni7nlacsaEgKJq0BQ/viewform?usp=publish-editor"
+      width="100%" 
+      height="600" 
+      frameborder="0">
+    </iframe>
+  </div>
+
+</section>
+
+<script src="certificate.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Segoe UI, sans-serif;
+}
+
+body{
+  background:#0f2027;
+  color:#fff;
+}
+
+.dashboard{
+  display:flex;
+  height:100vh;
+}
+
+.sidebar{
+  width:220px;
+  background:#111;
+  padding:20px;
+}
+
+.sidebar h2{
+  margin-bottom:20px;
+}
+
+.sidebar ul{
+  list-style:none;
+}
+
+.sidebar li{
+  padding:12px;
+  cursor:pointer;
+  border-radius:6px;
+}
+
+.sidebar li:hover{
+  background:#00c853;
+}
+
+.main{
+  flex:1;
+  padding:25px;
+  overflow-y:auto;
+}
+
+.section{
+  display:none;
+}
+
+.section.active{
+  display:block;
+}
+
+input, textarea, select{
+  width:100%;
+  margin:8px 0;
+  padding:10px;
+  border-radius:6px;
+  border:none;
+}
+
+textarea{
+  height:80px;
+}
+
+.options input{
+  width:48%;
+  display:inline-block;
+}
+
+button{
+  padding:10px 15px;
+  margin-top:10px;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.save{
+  background:#00c853;
+  color:#fff;
+}
+
+.edit{
+  background:#2196f3;
+  color:#fff;
+}
+
+.delete{
+  background:#e53935;
+  color:#fff;
+}
+
+.stats-box{
+  display:flex;
+  gap:20px;
+}
+
+.stats-box div{
+  background:#111;
+  padding:20px;
+  border-radius:8px;
+  width:200px;
+}

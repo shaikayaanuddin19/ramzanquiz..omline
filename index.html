@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3P4KRE4FTT"></script>
+
+    <!-- Google Ads -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2494772003836008"
+        crossorigin="anonymous"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-3P4KRE4FTT');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramzan Quiz</title>
+
+    
+    <link rel="stylesheet" href="style.css?v=1">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo" data-en="🌙 Ramzan Quiz" data-ur="🌙 رمضان کوئز">
+            🌙 Ramzan Quiz
+        </div>
+
+        <!-- LANGUAGE TOGGLE -->
+        <div class="lang-toggle">
+            <span onclick="setLanguage('en')">EN</span> |
+            <span onclick="setLanguage('ur')">UR</span>
+        </div>
+
+        <!-- MENU BUTTON -->
+        <div class="menu-btn" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <!-- SIDE MENU -->
+    <div class="side-menu" id="menu">
+        <a href="index.html" data-en="🏠 Home / Welcome" data-ur="🏠 ہوم / خوش آمدید">🏠 Home / Welcome</a>
+        <a href="aboutus.html" data-en="ℹ About Us" data-ur="ℹ ہمارے بارے میں">ℹ About Us</a>
+        <a href="privacy.html" data-en="🔐 Privacy Policy" data-ur="🔐 پرائیویسی پالیسی">🔐 Privacy Policy</a>
+        <a href="terms.html" data-en="📄 Terms & Conditions" data-ur="📄 شرائط و ضوابط">📄 Terms & Conditions</a>
+        <a href="certificate.html" data-en="📄 certificate" data-ur="📄 کوئز سوالات کی وضاحت">📄 certificate</a>
+        <a href="admin-login.html" data-en="🔒 Admin Login" data-ur="🔒 ایڈمن لاگ ان">🔒 Admin Login</a>
+        <a href="contact.html" data-en="📞 Contact Us" data-ur="📞 ہم سے رابطہ کریں">📞 Contact Us</a>
+    </div>
+
+    <!-- MAIN -->
+    <main>
+
+        <h1 data-en="Ramzan Quiz" data-ur="رمضان کوئز">
+            Ramzan Quiz
+        </h1>
+
+        <p
+            data-en="Daily 10 Questions to test your Deen knowledge. Learn, reflect and grow closer to Allah this Ramzan."
+            data-ur="روزانہ 10 سوالات کے ذریعے اپنے دینی علم کو آزمائیں اور اس رمضان اللہ کے قریب ہوں۔">
+            Daily 10 Questions to test your Deen knowledge.<br>
+            Learn, reflect and grow closer to Allah this Ramzan.
+        </p>
+
+        <!-- START QUIZ BUTTON (CENTER) -->
+        <button class="start-btn" data-en="Start Quiz" data-ur="کوئز شروع کریں" onclick="startQuiz()">
+            Start Quiz
+        </button>
+
+       <!-- ARTICLES (SCROLL KARNE PAR) -->
+<section class="home-article">
+
+    <!-- ARTICLE 1 -->
+    <div class="article-box">
+        <span class="article-no">ARTICLE 1</span>
+        <h3>What is Ramadan?</h3>
+        <p>
+            Ramadan Islam ka sabse barkat aur rehmat wala mahina hai.
+            Isi mahine me Qur’an nazil hua aur Musalmano par roza farz kiya gaya.
+        </p>
+    </div>
+
+    <!-- ARTICLE 2 -->
+    <div class="article-box">
+        <span class="article-no">ARTICLE 2</span>
+        <h3>Meaning of Ramadan</h3>
+        <p>
+            Ramadan Arabic word “Ramad” se nikla hai jiska matlab hai jalna.
+            Is mahine me insaan apne gunahon ko jala kar paak hota hai.
+        </p>
+    </div>
+
+    <!-- ARTICLE 3 -->
+    <div class="article-box">
+        <span class="article-no">ARTICLE 3</span>
+        <h3>Rules of Fasting in Islam</h3>
+        <p>
+            Roza niyyat se shuru hota hai aur Maghrib par khatam hota hai.
+            Khana, peena aur jaan-bujh kar ulti karna mana hota hai.
+        </p>
+    </div>
+
+    <!-- ARTICLE 4 -->
+    <div class="article-box">
+        <span class="article-no">ARTICLE 4</span>
+        <h3>Benefits of Fasting</h3>
+        <ul>
+            <li>Allah se qurbat badhata hai</li>
+            <li>Gunahon se door rakhta hai</li>
+            <li>Self-discipline sikhata hai</li>
+        </ul>
+    </div>
+
+    <!-- ARTICLE 5 -->
+    <div class="article-box">
+        <span class="article-no">ARTICLE 5</span>
+        <h3>Suhoor – Why It Is Important</h3>
+        <p>
+            Suhoor Sunnat hai aur isme barkat hoti hai.
+            Balanced suhoor roza asaan banata hai.
+        </p>
+    </div>
+
+    <!-- ARTICLE 6 -->
+    <div class="article-box">
+        <span class="article-no">ARTICLE 6</span>
+        <h3>Iftar – Sunnah Way to Break the Fast</h3>
+        <p>
+            Nabi ﷺ khajoor aur pani se iftar karte the.
+            Simple iftar sehat aur ibadat dono ke liye behtar hai.
+        </p>
+    </div>
+
+    <!-- ARTICLE 7 -->
+    <div class="article-box">
+        <span class="article-no">ARTICLE 7</span>
+        <h3>Common Mistakes During Ramadan</h3>
+        <p>
+            Sirf bhookh ko roza samajhna, jhoot aur ghibat se roze ka sawab kam ho jata hai.
+        </p>
+    </div>
+
+    <!-- ARTICLE 8 -->
+    <div class="article-box">
+        <span class="article-no">ARTICLE 8</span>
+        <h3>Who Is Exempted From Fasting?</h3>
+        <ul>
+            <li>Beemar insaan</li>
+            <li>Musafir</li>
+            <li>Haamela aur doodh pilane wali aurat</li>
+        </ul>
+    </div>
+
+    <!-- ARTICLE 9 -->
+    <div class="article-box">
+        <span class="article-no">ARTICLE 9</span>
+        <h3>Ramadan and Self-Discipline</h3>
+        <p>
+            Ramadan humein nafs par control aur discipline sikhata hai
+            jo poori zindagi me kaam aata hai.
+        </p>
+    </div>
+
+    <!-- ARTICLE 10 -->
+    <div class="article-box">
+        <span class="article-no">ARTICLE 10</span>
+        <h3>Importance of Quran in Ramadan</h3>
+        <p>
+            Ramadan Qur’an ka mahina hai.
+            Is mahine me Qur’an padhna zyada sawab ka kaam hai.
+        </p>
+    </div>
+
+    <!-- ARTICLE 11 -->
+    <div class="article-box">
+        <span class="article-no">ARTICLE 11</span>
+        <h3>Ramadan and Charity</h3>
+        <p>
+            Ramadan me sadqa aur zakat ka sawab kai guna badh jata hai.
+            Gareebon ki madad karna is mahine ki rooh hai.
+        </p>
+    </div>
+
+    <!-- ARTICLE 12 -->
+    <div class="article-box">
+        <span class="article-no">ARTICLE 12</span>
+        <h3>Ramadan – A Month of Change</h3>
+        <p>
+            Jo shakhs Ramadan ko dil se jee leta hai,
+            uski zindagi me positive aur lasting change aata hai.
+        </p>
+    </div>
+
+</section>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Ramzan Quiz</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

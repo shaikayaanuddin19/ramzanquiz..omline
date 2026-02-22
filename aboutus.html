@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us | Ramazan Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ramazan Quiz is an Islamic educational platform providing authentic quiz questions based on Qur’an and Sahih Hadith.">
+  <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+
+<!-- 🔤 Language Switch (BODY ke top pe) -->
+<div class="lang-switch">
+  <button onclick="setLang('en')">English</button>
+  <button onclick="setLang('ur')">اردو</button>
+</div>
+
+<section class="about-container">
+
+  <h1 data-en="About Us" data-ur="ہمارے بارے میں"></h1>
+
+  <p
+    data-en="Welcome to Ramazan Quiz. Ramazan Quiz is an educational Islamic quiz platform created to spread authentic Islamic knowledge in a simple and interactive way during the holy month of Ramadan."
+    data-ur="رمضان کوئز میں خوش آمدید۔ رمضان کوئز ایک تعلیمی اسلامی کوئز پلیٹ فارم ہے جو ماہِ رمضان میں مستند اسلامی علم کو آسان انداز میں پیش کرتا ہے۔">
+  </p>
+
+  <p
+    data-en="Our platform helps users learn and revise Islamic teachings through carefully prepared quiz questions based on the Qur’an and Sahih Hadith."
+    data-ur="ہماری ویب سائٹ قرآن اور صحیح احادیث کی بنیاد پر تیار کردہ کوئز سوالات کے ذریعے اسلامی تعلیمات سیکھنے میں مدد دیتی ہے۔">
+  </p>
+
+  <h2 data-en="Why Ramazan Quiz?" data-ur="رمضان کوئز کیوں؟"></h2>
+
+  <p
+    data-en="With so much information available online, it is important to learn Islam from reliable sources. Ramazan Quiz provides verified questions and clear explanations."
+    data-ur="انٹرنیٹ پر بہت سی معلومات موجود ہیں، لیکن ہر معلومات درست نہیں ہوتی۔ رمضان کوئز مستند سوالات اور واضح وضاحت فراہم کرتا ہے۔">
+  </p>
+
+  <h2 data-en="What We Offer" data-ur="ہم کیا فراہم کرتے ہیں"></h2>
+
+  <ul>
+    <li data-en="Daily Islamic quiz questions" data-ur="روزانہ اسلامی کوئز سوالات"></li>
+    <li data-en="Correct answers with explanations" data-ur="درست جوابات وضاحت کے ساتھ"></li>
+    <li data-en="Proof from Qur’an and Sahih Hadith" data-ur="قرآن اور صحیح احادیث سے دلائل"></li>
+    <li data-en="English and Urdu language support" data-ur="انگریزی اور اردو زبان کی سہولت"></li>
+    <li data-en="Simple and user-friendly experience" data-ur="آسان اور صارف دوست تجربہ"></li>
+  </ul>
+
+  <h2 data-en="Transparency" data-ur="شفافیت"></h2>
+
+  <p
+    data-en="Advertisements help us maintain the platform while keeping content free for users."
+    data-ur="اشتہارات ہمیں پلیٹ فارم کو برقرار رکھنے میں مدد دیتے ہیں تاکہ مواد صارفین کے لیے مفت رہے۔">
+  </p>
+
+  <p class="footer-text"
+     data-en="Ramadan Mubarak. May Allah grant us beneficial knowledge. Ameen."
+     data-ur="رمضان مبارک۔ اللہ ہمیں نافع علم عطا فرمائے۔ آمین۔">
+  </p>
+<!-- ☰ Hamburger Icon -->
+<!-- Hamburger Icon -->
+<div class="hamburger" onclick="toggleMenu()">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+
+<!-- Right Sidebar Menu -->
+<div id="sideMenu" class="side-menu">
+  <a href="index.html">🏠 Home</a>
+  <a href="aboutus.html">ℹ️ About Us</a>
+  <a href="privacy.html">🔒 Privacy Policy</a>
+  <a href="terms.html">📄 Terms & Conditions</a>
+  <a href="quiz.html">📝 Quiz</a>
+  <a href="certificate.html">🏆 Certificate</a>
+  <a href="contact.html" data-en="📞 Contact Us" data-ur="📞 ہم سے رابطہ کریں">📞 Contact Us</a>
+</div>
+
+<!-- Overlay (background click to close) -->
+<div id="overlay" onclick="toggleMenu()"></div>
+
+</section>
+
+<script src="about.js"></script>
+</body>
+</html>

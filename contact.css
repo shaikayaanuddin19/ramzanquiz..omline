@@ -1,0 +1,135 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* BODY */
+body{
+  background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  color:#fff;
+  min-height:100vh;
+}
+
+/* ☰ MENU */
+.menu-btn{
+  position:fixed;
+  top:15px;
+  left:15px;
+  font-size:28px;
+  cursor:pointer;
+  z-index:1001;
+}
+
+/* SIDEBAR */
+.sidebar{
+  position:fixed;
+  top:0;
+  left:-260px;
+  width:250px;
+  height:100%;
+  background:#000;
+  padding:20px;
+  transition:0.3s;
+  z-index:1000;
+}
+
+.sidebar.open{
+  left:0;
+}
+
+.sidebar h2{
+  margin-bottom:20px;
+  color:#ffd166;
+}
+
+.sidebar a{
+  display:block;
+  color:#fff;
+  text-decoration:none;
+  margin:10px 0;
+  padding:8px;
+  border-radius:6px;
+}
+
+.sidebar a:hover,
+.sidebar a.active{
+  background:#ffd166;
+  color:#000;
+}
+
+/* CONTENT */
+.content{
+  max-width:900px;
+  margin:80px auto;
+  padding:20px;
+}
+
+.content h1{
+  text-align:center;
+  margin-bottom:25px;
+  color:#ffd166;
+}
+
+/* CARD */
+.card{
+  background:rgba(0,0,0,0.4);
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.card p{
+  margin-bottom:15px;
+  line-height:1.6;
+}
+
+/* FORM */
+form input,
+form textarea{
+  width:100%;
+  padding:12px;
+  margin-bottom:12px;
+  border:none;
+  border-radius:6px;
+  outline:none;
+}
+
+form textarea{
+  min-height:120px;
+  resize:none;
+}
+
+form button{
+  width:100%;
+  padding:12px;
+  background:#00f5c4;
+  border:none;
+  border-radius:6px;
+  font-size:16px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+form button:hover{
+  background:#00c9a7;
+}
+
+/* WHATSAPP */
+.whatsapp-btn{
+  display:block;
+  margin-top:15px;
+  text-align:center;
+  background:#25D366;
+  color:#fff;
+  padding:12px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.whatsapp-btn:hover{
+  background:#1ebe5d;
+}
+

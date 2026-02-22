@@ -1,0 +1,240 @@
+/* =========================
+   RESET
+========================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* =========================
+   BODY
+========================= */
+body{
+    min-height:100vh;
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+}
+
+/* =========================
+   HEADER
+========================= */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+}
+
+/* LOGO */
+.logo{
+    font-size:22px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+/* LANGUAGE TOGGLE */
+.lang-toggle{
+    font-size:14px;
+    cursor:pointer;
+}
+
+.lang-toggle span{
+    margin:0 4px;
+    font-weight:bold;
+}
+
+.lang-toggle span:hover{
+    color:#7fd1b9;
+}
+
+/* =========================
+   HAMBURGER MENU
+========================= */
+.menu-btn{
+    width:30px;
+    cursor:pointer;
+}
+
+.menu-btn div{
+    height:3px;
+    background:white;
+    margin:5px 0;
+    border-radius:5px;
+}
+
+/* =========================
+   SIDE MENU
+========================= */
+.side-menu{
+    position:fixed;
+    top:0;
+    right:-260px;
+    width:260px;
+    height:100%;
+    background:#0b1c22;
+    padding:30px 20px;
+    transition:0.4s ease;
+    z-index:1000;
+}
+
+.side-menu.open{
+    right:0;
+}
+
+.side-menu a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    margin:20px 0;
+    font-size:18px;
+}
+
+.side-menu a:hover{
+    color:#7fd1b9;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+main{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+/* TITLE */
+main h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+/* DESCRIPTION */
+main p{
+    font-size:16px;
+    max-width:520px;
+    opacity:0.9;
+    line-height:1.6;
+    margin-bottom:30px;
+}
+
+/* =========================
+   START QUIZ BUTTON
+========================= */
+.start-btn{
+    padding:15px 40px;
+    font-size:20px;
+    background:#7fd1b9;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    color:#0b1c22;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.start-btn:hover{
+    background:#a0ffe3;
+    transform:scale(1.05);
+}
+
+/* =========================
+   ARTICLES SECTION (SCROLL)
+========================= */
+.home-article{
+    margin-top:180px;   /* 👈 scroll ke liye */
+    max-width:900px;
+    width:100%;
+}
+
+/* ARTICLE BOX */
+.article-box{
+    background:#f9f9f9;
+    color:#222;
+    padding:25px;
+    border-radius:14px;
+    margin-bottom:25px;
+    text-align:left;
+    line-height:1.7;
+    position:relative;
+}
+
+/* ARTICLE NUMBER BADGE */
+.article-no{
+    position:absolute;
+    top:-12px;
+    left:20px;
+    background:#2c5364;
+    color:white;
+    padding:5px 12px;
+    font-size:13px;
+    border-radius:20px;
+    font-weight:bold;
+}
+
+/* ARTICLE HEADING */
+.article-box h3{
+    margin-top:15px;
+    margin-bottom:10px;
+    color:#203a43;
+}
+
+/* LISTS */
+.article-box ul{
+    padding-left:20px;
+}
+
+.article-box ul li{
+    margin-bottom:6px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer{
+    background:black;
+    padding:15px;
+    text-align:center;
+    font-size:14px;
+}
+
+footer p{
+    opacity:0.8;
+}
+
+/* =========================
+   RESPONSIVE (MOBILE)
+========================= */
+@media(max-width:600px){
+
+    main h1{
+        font-size:32px;
+    }
+
+    main p{
+        font-size:15px;
+    }
+
+    .start-btn{
+        width:90%;
+        max-width:300px;
+        font-size:18px;
+        padding:12px 30px;
+    }
+
+    .home-article{
+        margin-top:130px;
+    }
+
+    .article-box{
+        padding:20px;
+        font-size:15px;
+    }
+}
